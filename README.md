@@ -20,4 +20,5 @@ A demonstration for ABP Blazor wasm authentication via using OpenIdDict which is
         "ResponseType": "code"
     },
     ```
-8. Run `abp/src/Acme.BookStore.Blazor/Acme.BookStore.Blazor.csproj` and try to log in.
+8. Run both `abp/src/Acme.BookStore.Blazor/Acme.BookStore.Blazor.csproj` and `abp/src/Acme.BookStore.HttpApi.Host/Acme.BookStore.HttpApi.Host.csproj`.
+9. Navigate to [localhost:44307](https://localhost:44307) and try to log in.
