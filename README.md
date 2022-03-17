@@ -15,6 +15,10 @@ A demonstration for ABP Blazor wasm authentication via using OpenIdDict which is
 7. Then refresh page you'll see **OpenID Connect** menu under **Security**. Navigate to `Scopes` menu and add following scopes: `email`, `openid`, `profile`, `role`, `phone`, `address`, `BookStore`.
    ![openid-scopes](content/images/openid-scopes.png)
 8. Navigate to `Applications` and create an application for `BookStore_Blazor`. _Make sure your parameters must match with following parameters_
+   - ClientId: `BookStore_Blazor`
+   - Display Name: `BookStore_Blazor`
+   - Redirect Uris: `https://localhost:44307/authentication/login-callback`
+   - Allowed Scoped: _Choose all_
    ![openid-applications-parameteres](content/images/openid-applications-parameteres.png)
 9.  Run both `abp/src/Acme.BookStore.Blazor/Acme.BookStore.Blazor.csproj` and `abp/src/Acme.BookStore.HttpApi.Host/Acme.BookStore.HttpApi.Host.csproj`.
 10. Navigate to [localhost:44307](https://localhost:44307) and try to log in.
