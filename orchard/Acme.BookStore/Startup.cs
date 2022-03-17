@@ -15,8 +15,7 @@ namespace Acme.BookStore
                 options.AddPolicy(name: "clients",
                     builder =>
                     {
-                        builder.WithOrigins("https://localhost:44307",
-                                            "http://localhost:44307");
+                        builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
                     });
             });
         }
